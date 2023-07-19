@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+
+/* main navigation div */
+.navDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95vw;
+  height: 50px;
+}
+
+/* left div */
+.mainNav {
+  display: flex;
+  justify-content: center;
+  width: 86vw;
+  list-style: none;
+}
+.mainNav li {
+  margin: 0 30px 0 20px;
+  letter-spacing: 0.1rem;
+  font-size: 20px;
+}
+
+/* right div */
+input[type="checkbox"] {
+  display: none;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+}
+.rightDiv {
+  padding: 0 0 0 20px;
+  margin: auto;
+}
+.subNav {
+  display: flex;
+  width: 10vw;
+  justify-content: center;
+  list-style: none;
+}
+li img {
+  height: 25px;
+  width: 25px;
+  margin-left: 7px;
+}
+
+/* main body design*/
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.mainDiv {
+  background-image: linear-gradient(to right, #ff74c5, #f7dd6a);
+  font-family: sans-serif;
+}
+
+/* lorem text design */
+.loremTxt {
+  background-color: rgba(233, 100, 107, 0.671);
+  color: #fff;
+  position: absolute;
+  width: 42vw;
+  height: 225px;
+  opacity: 0.8;
+  top: 300px;
+  left: 80px;
+  text-align: left;
+}
+.loremTxtInner {
+  width: 35vw;
+  margin: 20px;
+  padding: 15px;
+}
+.loremTxtInner h1,
+.loremTxtInner p {
+  width: inherit;
+  margin: 10px;
+}
+.loremTxtInner h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.loremTxtInner p {
+  font-size: 15px;
+}
+
+/* order now heading */
+.mainBottomHading h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 60px 0 50px 0;
+}
+
+/* cards desig */
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  justify-content: space-around;
+  margin: auto;
+  padding: 20px 0 0 20px;
+}
+.cards {
+  width: 250px;
+  height: 300px;
+  padding: 18px 0 20px 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0 50px 0 50px;
+  margin: 15px 3%;
+}
+.cardImg {
+  width: 230px;
+  height: 195px;
+}
+.cardImg h2 {
+  margin: 15px;
+}
+.cardImg p {
+  margin: 5px;
+}
+
+/* button design */
+.btn {
+  width: 170px;
+  height: 60px;
+  background-color: #f0c8b5;
+  border: #ffc7d9a1;
+  border-radius: 50px;
+  margin: 60px auto 100px auto;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* media query for different screen size */
+@media screen and (max-width: 1040px) {
+  /* navbar query */
+  .leftDiv {
+    width: 78vw;
+    text-align: left;
+  }
+  .mainNav {
+    display: block;
+    text-align: left;
+    margin-left: 30px;
+    line-height: 2.5rem;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #fff;
+    height: 40vh;
+    padding-left: 25px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    padding-left: 36px;
+  }
+  .subNav {
+    width: 8vw;
+  }
+
+  /* main body query*/
+  .loremTxt {
+    width: 55vw;
+    height: 225px;
+    top: 120px;
+    left: 80px;
+  }
+  .loremTxtInner {
+    width: 47vw;
+    margin: 20px;
+    padding: 15px;
+  }
+  .loremTxtInner h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  .loremTxtInner p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 732px) {
+  /* navbar query */
+  .mainNav {
+    width: 50vw;
+  }
+
+  /* main body query*/
+  .loremTxt {
+    width: 65vw;
+    height: 200px;
+    top: 140px;
+    left: 80px;
+  }
+  .loremTxtInner {
+    width: 57vw;
+    margin: 20px;
+    padding: 15px;
+  }
+  .loremTxtInner h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .loremTxtInner p {
+    font-size: 12px;
+  }
+}
